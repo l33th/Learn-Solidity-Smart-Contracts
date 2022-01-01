@@ -4,4 +4,5 @@ contract AbstractContract {
     string public stringValue = "l33thContract";
     bool public myBool = true;
     int public myInt = 1;
+    uint public muUint = 7;
 }
