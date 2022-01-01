@@ -7,4 +7,5 @@ contract AbstractContract {
     int public myInt = 1
     uint public myUint = 7;
     uint8 public myUint8 = 8;
+    uint256 public myUint256 = 99999;
 }
