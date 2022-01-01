@@ -3,6 +3,8 @@ pragma solidity ^0.8.10;
 contract L33thContract {
     Person[] public people;
 
+    uint256 public peopleCount;
+
     struct Person {
         string _firstName;
         string _lastName;
@@ -12,5 +14,6 @@ contract L33thContract {
         public
     {
         people.push(Person(_firstName, _lastName));
+        peopleCount++;
     }
 }
