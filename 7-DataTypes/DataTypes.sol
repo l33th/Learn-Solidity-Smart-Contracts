@@ -6,4 +6,5 @@ contract AbstractContract {
     int public mySignedInt = -1;
     int public myInt = 1
     uint public myUint = 7;
+    uint8 public myUint8 = 8;
 }
