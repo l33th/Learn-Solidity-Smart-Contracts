@@ -1,4 +1,4 @@
-pragma solidity ^0.8.11;
+pragma solidity ^0.8.10;
 
 contract L33thContract {
     enum State { Waiting, Ready, Active }
