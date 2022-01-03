@@ -1,9 +1,8 @@
 pragma solidity ^0.8.10;
 
 contract L33thContract {
-    Person[] public people;
-
     uint256 public peopleCount;
+    mapping(uint -> Person) public people;
 
     struct Person {
         string _firstName;
