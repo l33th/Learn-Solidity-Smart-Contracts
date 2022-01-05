@@ -17,8 +17,8 @@ contract L33thContract {
         string _lastName;
     }
 
-    constructor() {
-
+    constructor() public {
+        owner = msg.sender;
     }
 
     function addPerson(string memory _firstName, string memory _lastName)
