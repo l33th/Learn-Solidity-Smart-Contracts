@@ -7,7 +7,7 @@ contract L33thContract {
     address owner;
 
     modifier onlyOwner() {
-        msg.sender == owner
+        require(msg.sender == owner)
     }
 
     struct Person {
