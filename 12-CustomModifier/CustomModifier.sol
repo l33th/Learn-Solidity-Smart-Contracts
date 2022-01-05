@@ -17,6 +17,10 @@ contract L33thContract {
         string _lastName;
     }
 
+    function constructor() {
+        
+    }
+
     function addPerson(string memory _firstName, string memory _lastName)
         public
         onlyOwner
