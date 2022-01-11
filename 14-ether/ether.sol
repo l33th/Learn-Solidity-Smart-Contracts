@@ -4,7 +4,11 @@ contract EthContract() {
     mapping(address => uint256) public balances;
     address wallet;
 
-    function buyToken() {
+    constructor(address _wallet) public {
+        wallet = _wallet;
+    }
+
+    function buyToken() public {
         // buy a token
         balances[msg.sender] += 1;
         wallet.transfer(msg.value);
