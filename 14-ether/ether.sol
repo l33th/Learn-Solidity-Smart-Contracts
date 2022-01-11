@@ -7,7 +7,7 @@ contract EthContract() {
     function buyToken() {
         // buy a token
         balances[msg.sender] += 1;
-        wallet.transfer();
+        wallet.transfer(msg.value);
         // send ether to the wallet
     }
 }
