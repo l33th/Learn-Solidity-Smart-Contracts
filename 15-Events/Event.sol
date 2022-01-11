@@ -5,7 +5,7 @@ contract EthContract() {
     address payable wallet;
 
     event Purchase(
-        address _buyer,
+        address indexed _buyer,
         uint256 _amount
     );
  
