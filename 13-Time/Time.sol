@@ -4,10 +4,10 @@ contract L33thContract {
     uint256 public peopleCount = 0;
     mapping(uint256 => Person) public people;
 
-    uint256 openingTime;
+    uint256 openingTime = 1641876182;
 
     modifier onlyWhileOpen() {
-        require(msg.sender == owner)
+        require(block.timestamp >= openingTime)
         _;
     }
 
