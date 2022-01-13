@@ -23,6 +23,8 @@ contract PseudoToken is ERC20Token {
     }
 
     function mint() public {
-        
+        super.mint();
+        ownerCount ++;
+        owners.push(msg.sender);
     }
 }
