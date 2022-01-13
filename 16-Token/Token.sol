@@ -8,8 +8,7 @@ contract ERC20Token {
     }
 }
 
-contract EthContract() {
-    mapping(address => uint256) public balances;
+contract EthContract {
     address payable wallet;
  
     constructor(address payable _wallet) public {
