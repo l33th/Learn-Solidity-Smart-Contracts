@@ -23,6 +23,7 @@ contract EthContract {
     }
 
     function buyToken() public payable {
+        ERC20Token(address(token));
         wallet.transfer(msg.value);
     }
 }
