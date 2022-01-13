@@ -15,7 +15,14 @@ contract ERC20Token {
 
 contract PseudoToken is ERC20Token {
     string public symbol;
+    address[] public owners;
+    uint256 ownerCount;
+    
     constructor(string memory _name, string memory _symbol) ERC20Token(_name) public {
         symbol = _symbol;
+    }
+
+    function mint() public {
+        
     }
 }
