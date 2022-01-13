@@ -14,7 +14,8 @@ contract ERC20Token {
 }
 
 contract PseudoToken is ERC20Token {
-    constructor(string memory _name) ERC20Token(_name) public {
-        
+    string public symbol;
+    constructor(string memory _name, string memory _symbol) ERC20Token(_name) public {
+        symbol = _symbol;
     }
 }
